@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 
 project(timer)
 
+add_compile_options(-Wall -Wextra -Wpedantic -Werror)
+
 add_library(${PROJECT_NAME})
 target_sources(${PROJECT_NAME} PRIVATE src/Timer.cpp)
 target_include_directories(${PROJECT_NAME} PUBLIC include)
