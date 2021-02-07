@@ -1,5 +1,6 @@
-#include <doctest/doctest.h>
 #include <mith/Timer.h>
+
+#include <doctest/doctest.h>
 
 TEST_CASE("Timer")
 {

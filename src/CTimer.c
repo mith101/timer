@@ -1,5 +1,5 @@
 #include <mith/CTimer.h>
-// ...
+
 #include <assert.h>
 #include <stdio.h>
 #include <time.h>
@@ -22,6 +22,6 @@ void mith_timer_stop(const uint32_t id)
 uint64_t mith_timer_get_elapsed(const uint32_t id)
 {
     assert(id < NUMBER_OF_TIMERS);
-    return 1e9 * (t_stop[id].tv_sec - t_start[id].tv_sec) +
+    return 1e9l * (t_stop[id].tv_sec - t_start[id].tv_sec) +
            (t_stop[id].tv_nsec - t_start[id].tv_nsec);
 }

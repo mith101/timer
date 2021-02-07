@@ -1,6 +1,6 @@
-#include <doctest/doctest.h>
 #include <mith/CTimer.h>
 
+#include <doctest/doctest.h>
 #include <iostream>
 
 TEST_CASE("CTimer")
