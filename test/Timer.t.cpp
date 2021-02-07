@@ -8,8 +8,8 @@ TEST_CASE("Timer")
     REQUIRE_EQ(mith::Timer<1>::getElapsed(), 0);
 
     // sarting the timer:
-    mith::Timer<0>::start();
     mith::Timer<1>::start();
+    mith::Timer<0>::start();
 
     // stopping the timer stores the duration since the last call to start:
     mith::Timer<0>::stop();

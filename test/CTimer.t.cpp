@@ -10,6 +10,7 @@ TEST_CASE("CTimer")
     REQUIRE_EQ(mith_timer_get_elapsed(1), 0);
 
     // sarting the timer:
+    mith_timer_start(1);
     mith_timer_start(0);
 
     // stopping the timer stores the duration since the last call to start:
